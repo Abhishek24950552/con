@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        body {
+          background-image: url('https://gcpat.in/sites/default/files/2018-04/CONCERA-Blog-%2317.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Strength Prediction</title>
+</head>
+
+<body>
+    <h1 style="color:rgb(63, 4, 76);"> Concrete Strength Prediction </h1>
+    <form method="POST" action="/predict_strength">
+
+        <label style="color:rgb(0, 0, 0);">Cement:</label>
+        <input type = "text" name = "Cement">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="color:rgb(0, 0, 0);">Blast_Furnace_Slag:</label>
+        <input type = "text" name = "Blast_Furnace_Slag">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="color:rgb(0, 0, 0);">Fly_Ash:</label>
+        <input type = "text" name = "Fly_Ash">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="color:rgb(0, 0, 0);">Water:</label>
+        <input type = "text" name = "Water">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="color:rgb(0, 0, 0);">Superplasticizer:</label>
+        <input type = "text" name = "Superplasticizer">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="color:rgb(0, 0, 0);">Coarse_Aggregate:</label>
+        <input type = "text" name = "Coarse_Aggregate">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="color:rgb(0, 0, 0);">Fine_Aggregate:</label>
+        <input type = "text" name = "Fine_Aggregate">
+        </select>
+
+        <br>
+        <br>
+
+        <label style="color:rgb(0, 0, 0);">Age:</label>
+        <input type = "text" name = "Age">
+        </select>
+
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p style="color:rgb(0, 0, 0);">Your concrete strength will be <b> {{ prediction }}</b> </p>
+
+
+    </form>
+
+
+</body>
+</html>

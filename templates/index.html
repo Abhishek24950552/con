@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Strength Predicition</title>
+</head>
+
+<body style="background-color: rgb(68, 148, 152);">
+
+    <h1> Concrete Strength Predicition </h1>
+    <form method="POST" action="/predict_strength">
+
+        <label>Cement:</label>
+        <input type = "text" name = "Cement">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Blast_Furnace_Slag:</label>
+        <input type = "text" name = "Blast_Furnace_Slag">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Fly_Ash:</label>
+        <input type = "text" name = "Fly_Ash">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Water:</label>
+        <input type = "text" name = "Water">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Superplasticizer:</label>
+        <input type = "text" name = "Superplasticizer">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Coarse_Aggregate:</label>
+        <input type = "text" name = "Coarse_Aggregate">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Fine_Aggregate:</label>
+        <input type = "text" name = "Fine_Aggregate">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Age:</label>
+        <input type = "text" name = "Age">
+        </select>
+
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p>Your concrete strength will be <b> {{ prediction }}</b> </p>
+
+
+    </form>
+
+
+</body>
+</html>
